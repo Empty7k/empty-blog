@@ -33,9 +33,11 @@ function Favorites() {
             <ul>
                 <li>Need for Speed Underground 1</li>
                 <li>Celeste</li>
+                <li>GTA San Andreas</li>
+                <li>Dungeon Hunter 5 (RIP)</li>
                 <li>peter jackson's king kong the official game of the movie (PS2)</li>
                 <li>Stardew Valley</li>
-                <li>CS:GO (Rest in piece)</li>
+                <li>CS:GO (RIP)</li>
                 <li>Hellblade: Senua's Sacrifice</li>
             </ul>
 
@@ -48,6 +50,15 @@ function Favorites() {
                 <li><a href="https://www.youtube.com/@BroxadaSinistra" target="_blank" rel="noopener noreferrer">Broxada Sinistra</a></li>
                 <li><a href="https://www.youtube.com/@BakaGaijinn" target="_blank" rel="noopener noreferrer">Baka Gaijin</a></li>
                 <li><a href="https://www.youtube.com/@jvscholz/videos" target="_blank" rel="noopener noreferrer">jvscholz</a></li>
+            </ul>
+
+            <h2>Mangás</h2>
+            <ul>
+                <li>Oyasumi Punpun</li>
+                <li>Shingeki no Kyojin</li>
+                <li>ReLife</li>
+                <li>The Beginning After the End</li>
+                <li>Solanin</li>
             </ul>
 
         </div>
