@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    color: rgb(0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    padding-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+footer {
+    padding-top: 50px;
+}
+
+.site-background {
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.home-bg {
+    background-image: url(./images/car2000s.png);
+    color: rgb(255, 255, 255);
+}
+
+.favorites-bg {
+    background-image: url(./images/zelda.png);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.music-bg {
+    background-image: url(./images/radiocover.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+body h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+#find-me {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255)
+}
+
+#find-me h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+}
+
+/* Remove a cor azul padrão dos links e herda a cor do texto */
+a, Link {  /* <-- Atenção: 'Link' é o componente do React Router */
+    color: inherit;          /* Herda a cor do elemento pai */
+
   }
-}
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
