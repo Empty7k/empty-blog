@@ -41,6 +41,17 @@ function Favorites() {
                 <li>Hellblade: Senua's Sacrifice</li>
             </ul>
 
+            <h2>Series</h2>
+            <ul>
+                <li>Breaking Bad</li>
+                <li>Better Call Soul</li>
+                <li><a href='/cobrakai'>Cobra Kai</a></li>
+                <li>Bojack Horseman</li>
+                <li>Rick and Morty</li>
+                <li>The Big Bang Theory</li>
+                <li>The Office</li>
+            </ul>
+
             <h2>Youtube Channels</h2>
             <ul>
                 <li><a href="https://www.youtube.com/@ludoviajante" target="_blank" rel="noopener noreferrer">Ludoviajante</a></li>

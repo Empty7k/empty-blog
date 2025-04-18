@@ -25,19 +25,22 @@ footer {
 }
 
 .home-bg {
-    background-image: url(./images/car2000s.png);
+    background-image: url(./images/milk.jpg);
     color: rgb(255, 255, 255);
 }
 
 .favorites-bg {
     background-image: url(./images/zelda.png);
-    background-size: cover;
     color: rgb(255, 255, 255);
 }
 
 .music-bg {
     background-image: url(./images/radiocover.jpg);
-    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.cobrakai-bg {
+    background-image: url(./images/logo-cobrakai.jpg);
     color: rgb(255, 255, 255);
 }
 

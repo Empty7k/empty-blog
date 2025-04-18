@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Favorites from './pages/Favorites';
 import Music from './pages/Music';
+import Cobrakai from './pages/Cobrakai';
 import './App.css';
 
 // Componente para controlar o background
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/cobrakai" element={<Cobrakai />} />
         </Routes>
         <Footer />
       </BackgroundWrapper>

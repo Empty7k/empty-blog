@@ -5,7 +5,7 @@ function Music() {
     <div id='music' className='page-content'>
       <h1>Musics</h1>
 
-      <h2>Favorite Albuns</h2>
+      <h2>Favorite Albums</h2>
       <ul>
         <li>In Rainbows (RadioHead)</li>
         <li>The Bends (RadioHead)</li>
