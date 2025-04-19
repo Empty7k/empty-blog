@@ -16,16 +16,6 @@ function Favorites() {
             <img src={HeaderGif} alt="Header Gif" style={{ width: '400px', height: 'auto' }} />
             <p>some of my favorite things, without order and maybe missing something because my memory is not the best</p>
 
-            <h2>Books</h2>
-            <ul>
-                <li>O peso do passáro morto</li>
-                <li>Noites brancas</li>
-                <li>Percy Jackson e os Olimpianos</li>
-                <li>O declínio de um homem</li>
-                <li>A metamorfose</li>
-                <li>Flores para Algernon</li>
-            </ul>
-
             <h2>Animes</h2>
             <ul>
                 <li>Naruto</li>

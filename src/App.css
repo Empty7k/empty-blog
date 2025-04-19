@@ -44,6 +44,16 @@ footer {
     color: rgb(255, 255, 255);
 }
 
+.library-bg {
+    background-image: url(./images/daria-kraplak-d34DtRp1bqo-unsplash.jpg);
+    color: rgb(255, 255, 255);
+}
+
+.fernandopessoa-bg {
+    background-image: url(./images/daria-kraplak-d34DtRp1bqo-unsplash.jpg);
+    color: rgb(255, 255, 255);
+}
+
 body h1 {
     font-family: 'Press Start 2P', cursive;
 }

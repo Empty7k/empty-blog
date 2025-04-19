@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Favorites from './pages/Favorites';
 import Music from './pages/Music';
 import Cobrakai from './pages/Cobrakai';
+import Library from './pages/Library';
+import FernandoPessoa from './pages/FernandoPessoa';
 import './App.css';
 
 // Componente para controlar o background
@@ -32,6 +34,9 @@ function App() {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/music" element={<Music />} />
           <Route path="/cobrakai" element={<Cobrakai />} />
+          <Route path="/library" element={<Library />} />
+          <Route path="/fernandopessoa" element={<FernandoPessoa />} />
+
         </Routes>
         <Footer />
       </BackgroundWrapper>
