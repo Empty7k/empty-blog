@@ -1,8 +1,18 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 function Music() {
+  useEffect(() => {
+    const favicon = document.querySelector("link[rel='icon']");
+    if (favicon) favicon.href = "images/favicon-thom.ico"; // Caminho do novo favicon
+  }, []);
+
+  useEffect(() => {
+    document.title = "Empty's Brain | Music";
+  }, []);
   return (
     <div id='music' className='page-content'>
+
       <h1>Musics</h1>
 
       <h2>Favorite Albums</h2>
@@ -15,7 +25,7 @@ function Music() {
         <li>Acústico Duzz (Duzz)</li>
         <li>Kalledy (Link do Zap)</li> 
         <li>Meteora (Linkin Park)</li>
-        <li>A história sem fim (Bih Rush)</li>
+        <li>A história sem fim (Big Rush)</li>
        
       </ul>
 

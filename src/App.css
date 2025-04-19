@@ -48,24 +48,42 @@ body h1 {
     font-family: 'Press Start 2P', cursive;
 }
 
-
-#find-me {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 255, 255)
-}
-
-#find-me h2 {
-    font-family: 'Press Start 2P', cursive;
-    color: rgb(255, 255, 255);
-    font-size: medium;
-}
-
 /* Remove a cor azul padrão dos links e herda a cor do texto */
 a, Link {  /* <-- Atenção: 'Link' é o componente do React Router */
     color: inherit;          /* Herda a cor do elemento pai */
 
   }
-  
+
+.post-it {
+    background-color: #ffff88;; /* Amarelo post-it */
+    color: #53062f; /* Rosa shock */
+    font-family: "Comic Sans MS", cursive;
+    padding: 15px;
+    transform: rotate(-3deg);
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+    display: inline-block;
+    margin: 10px;
+}
+
+.neon-text {
+    color: rgb(255, 255, 255);
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #ff00ff,
+      0 0 20px #ff00ff,
+      0 0 40px #00ffff;
+    background-color: rgba(0,0,0,0.7); /* Fundo escuro semi-transparente */
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block; /* Faz o contorno se ajustar ao texto */
+    margin: 10px 0; /* Espaçamento opcional */
+}
+
+.simple-list{
+    background-color: black;
+    display: inline-block; /* Faz o contorno se ajustar ao texto */
+    margin: 10px 0; /* Espaçamento opcional */
+}
 
 
 

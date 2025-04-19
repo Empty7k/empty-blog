@@ -1,6 +1,10 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 function Cobrakai() {
+    useEffect(() => {
+        document.title = "Empty's Brain | Cobra Kai";
+      }, []);
     return (
         <div id='cobrakai' className='page-content'>
             <h1>Cobra Kai</h1>

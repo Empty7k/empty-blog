@@ -1,11 +1,20 @@
 import React from 'react';
+import { useEffect } from 'react';
 import HeaderGif from '../images/favorites-speech-bubble.gif';
 
 function Favorites() {
+    useEffect(() => {
+        const favicon = document.querySelector("link[rel='icon']");
+        if (favicon) favicon.href = "images/favicon-lainhaha.ico"; // Caminho do novo favicon
+      }, []);
+
+    useEffect(() => {
+        document.title = "Empty's Brain | Favorites";
+    }, []);
     return (
         <div id='favorites' className='page-content'>
             <img src={HeaderGif} alt="Header Gif" style={{ width: '400px', height: 'auto' }} />
-            <p>Here, you will find some of my favorite things</p>
+            <p>some of my favorite things, without order and maybe missing something because my memory is not the best</p>
 
             <h2>Books</h2>
             <ul>

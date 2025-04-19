@@ -11,6 +11,7 @@ function Header() {
         <a href="/">Home</a> | 
         <a href="/favorites">Empty's favorites</a> |
         <a href="/music">Music playlist</a> |
+        <a href="/library">The empty library</a> |
       </nav>
       <hr className='divider'/>
     </header>
