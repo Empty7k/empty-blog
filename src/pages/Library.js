@@ -4,7 +4,7 @@ function Library() {
     return (
         <div id='library' className='page-content'>
             <h1>The empty library</h1>
-            <p>It's not empty, i just think that the name will be funny...</p>
+            <p>It's not empty; I just think the name will be funny..</p>
             
             <h2>Favorite books</h2>
             <ul>
@@ -21,7 +21,7 @@ function Library() {
                 <li>Dostoiévsk</li>
                 <li>Franz Kafka</li>
                 <li>Aline Bei</li>
-                <li><a href='/FernandoPessoa'>Fernando Pessoa</a></li>
+                <li><a href='/pessoa'>Fernando Pessoa</a></li>
             </ul>
         </div>
     );

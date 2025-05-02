@@ -49,8 +49,8 @@ footer {
     color: rgb(255, 255, 255);
 }
 
-.fernandopessoa-bg {
-    background-image: url(./images/daria-kraplak-d34DtRp1bqo-unsplash.jpg);
+.pessoa-bg {
+    background-image: url(./images/fernando-pessoa.png);
     color: rgb(255, 255, 255);
 }
 
@@ -93,7 +93,69 @@ a, Link {  /* <-- Atenção: 'Link' é o componente do React Router */
     background-color: black;
     display: inline-block; /* Faz o contorno se ajustar ao texto */
     margin: 10px 0; /* Espaçamento opcional */
+    padding: 5px 10px;
 }
+
+.simple-list h2{
+    padding: 5px 10px;
+    margin: 5px 0; /* Espaçamento opcional */
+}
+
+/* Container principal */
+.poema-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  /* Estilo do "post-it" literário */
+  .poema-container {
+    background-color: rgba(0, 0, 0, 0.93);
+    border-left: 4px solid #5a3921; /* Bordão mais escuro */
+    padding: 30px;
+    max-width: 650px; /* Largura maior para poemas longos */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    font-family: 'Cormorant Garamond', serif;
+    margin-left: 20px;
+    line-height: 1.7;
+  }
+  
+  /* Título */
+  .poema-titulo {
+    font-size: 1.8rem;
+    color: #63442b;
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e7be85;
+  }
+  
+  /* Versos */
+  .poema-texto p {
+    margin: 0;
+    padding: 4px 0;
+    font-size: 1.15rem;
+    color: #fffefe;
+    text-align: left;
+  }
+  
+  /* Divisor de estrofes */
+  .estrofe-divider {
+    height: 1px;
+    background: linear-gradient(to right, #d4a76a, transparent);
+    margin: 18px 0;
+    width: 50%;
+  }
+  
+  /* Autor */
+  .poema-autor {
+    font-style: italic;
+    margin-top: 40px;
+    color: #5a3921;
+    text-align: right;
+    font-size: 1rem;
+  }
+  
+ 
 
 
 

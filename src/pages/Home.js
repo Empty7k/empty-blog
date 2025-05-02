@@ -16,20 +16,9 @@ function Home() {
                 style={{ width: "400px", marginTop: "20px", marginBottom: "20px" }} // Estilo opcional
             />
             <br />
-            <div id='find-me' className='post-it'>
-                <h2>places to find me:</h2>
-                <ul>
-                    <li><a href="https://github.com/Empty7k" target="_blank" rel="noopener noreferrer">Github</a></li>
-                    <li><a href="https://www.skoob.com.br/usuario/9332058" target="_blank" rel="noopener noreferrer">Skoob</a></li>
-                    <li><a href="https://letterboxd.com/Empty7k/" target="_blank" rel="noopener noreferrer">LetterBoxd</a></li>
-                    <li><a href="https://anilist.co/user/dalex/" target="_blank" rel="noopener noreferrer">Anilist</a></li>
-                    <li><a href="https://www.instagram.com/odavid_alex/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                </ul>
-            </div>
-            <br/>
             <div className="simple-list">
             
-                <h3>some shit that i like and make me happy</h3>
+                <h3>Some shits I like that make me happy</h3>
                 <ul>
                     <li>Philophosy</li>
                     <li>UFC</li>
@@ -42,6 +31,17 @@ function Home() {
                     <li>Lain</li>
                     <li>Counter Strike</li>
 
+                </ul>
+            </div>
+            <br/>
+            <div id='find-me' className='post-it'>
+                <h2>places to find me:</h2>
+                <ul>
+                    <li><a href="https://github.com/Empty7k" target="_blank" rel="noopener noreferrer">Github</a></li>
+                    <li><a href="https://www.skoob.com.br/usuario/9332058" target="_blank" rel="noopener noreferrer">Skoob</a></li>
+                    <li><a href="https://letterboxd.com/Empty7k/" target="_blank" rel="noopener noreferrer">LetterBoxd</a></li>
+                    <li><a href="https://anilist.co/user/dalex/" target="_blank" rel="noopener noreferrer">Anilist</a></li>
+                    <li><a href="https://www.instagram.com/odavid_alex/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                 </ul>
             </div>
         </div>
