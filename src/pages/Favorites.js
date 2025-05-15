@@ -1,6 +1,11 @@
 import React from 'react';
 import { useEffect } from 'react';
 import HeaderGif from '../images/favorites-speech-bubble.gif';
+import Animes from '../images/animes.gif';
+import Games from '../images/games.gif';
+import Series from '../images/series.gif';
+import Youtube from '../images/youtube.gif';
+import Manga from '../images/manga.gif';
 
 function Favorites() {
     useEffect(() => {
@@ -15,8 +20,8 @@ function Favorites() {
         <div id='favorites' className='page-content'>
             <img src={HeaderGif} alt="Header Gif" style={{ width: '400px', height: 'auto' }} />
             <p>some of my favorite things, without order and maybe missing something because my memory is not the best</p>
-
-            <h2>Animes</h2>
+            <br />
+            <img src={Animes} alt="Animes" style={{ width: '400px', height: 'auto' }} />
             <ul>
                 <li>Naruto</li>
                 <li>Hunter x Hunter</li>
@@ -28,7 +33,7 @@ function Favorites() {
                 <li>Cyberpunk: Edgerunners</li>
             </ul>
 
-            <h2>Games</h2>
+            <img src={Games} alt="Games" style={{ width: '400px', height: 'auto' }} />
             <ul>
                 <li>Need for Speed Underground 1</li>
                 <li>Celeste</li>
@@ -40,7 +45,7 @@ function Favorites() {
                 <li>Hellblade: Senua's Sacrifice</li>
             </ul>
 
-            <h2>Series</h2>
+            <img src={Series} alt="Series" style={{ width: '400px', height: 'auto' }} />
             <ul>
                 <li>Breaking Bad</li>
                 <li>Better Call Soul</li>
@@ -51,7 +56,7 @@ function Favorites() {
                 <li>The Office</li>
             </ul>
 
-            <h2>Youtube Channels</h2>
+            <img src={Youtube} alt="youtubes" style={{ width: '800px', height: '70px' }} />
             <ul>
                 <li><a href="https://www.youtube.com/@ludoviajante" target="_blank" rel="noopener noreferrer">Ludoviajante</a></li>
                 <li><a href="https://www.youtube.com/@esternamente" target="_blank" rel="noopener noreferrer">EsterNaMente</a></li>
@@ -62,7 +67,7 @@ function Favorites() {
                 <li><a href="https://www.youtube.com/@jvscholz/videos" target="_blank" rel="noopener noreferrer">jvscholz</a></li>
             </ul>
 
-            <h2>Mangás</h2>
+            <img src={Manga} alt="manga" style={{ width: '400px', height: 'auto' }} />
             <ul>
                 <li>Oyasumi Punpun</li>
                 <li>Shingeki no Kyojin</li>

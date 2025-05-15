@@ -11,14 +11,14 @@ function Home() {
             </div>
             <br />
             <img
-                src="/images/hooray-yay.gif"  // Caminho a partir da pasta public
+                src="/images/im-cringe.gif"  // Caminho a partir da pasta public
                 alt="GIF retrô"
                 style={{ width: "400px", marginTop: "20px", marginBottom: "20px" }} // Estilo opcional
             />
             <br />
             <div className="simple-list">
             
-                <h3>Some shits I like that make me happy</h3>
+                <h3>Some things I like that make me happy</h3>
                 <ul>
                     <li>Philophosy</li>
                     <li>UFC</li>
@@ -30,6 +30,7 @@ function Home() {
                     <li>Brazilian Jiu-Jitsu</li>
                     <li>Lain</li>
                     <li>Counter Strike</li>
+                    <li>Anime</li>
 
                 </ul>
             </div>
