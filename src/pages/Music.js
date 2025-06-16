@@ -17,7 +17,7 @@ function Music() {
 
       <h1>Musics</h1>
 
-      <p>My music taste changes a lot, so this is only based on this year</p>
+      <p>My music taste changes a lot, so don’t take this too seriously</p>
 
       <h2>Favorites </h2>
       <ul>
