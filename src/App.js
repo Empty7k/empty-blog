@@ -8,6 +8,7 @@ import Music from './pages/Music';
 import Cobrakai from './pages/Cobrakai';
 import Library from './pages/Library';
 import Pessoa from './pages/Pessoa';
+import Gallery from './pages/Gallery';
 import './App.css';
 
 // Componente para controlar o background
@@ -36,6 +37,7 @@ function App() {
           <Route path="/cobrakai" element={<Cobrakai />} />
           <Route path="/library" element={<Library />} />
           <Route path="/pessoa" element={<Pessoa />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </BackgroundWrapper>

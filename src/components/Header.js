@@ -12,6 +12,7 @@ function Header() {
         <a href="/favorites">Empty's favorites</a> |
         <a href="/music">Music playlist</a> |
         <a href="/library">The empty library</a> |
+        <a href="/gallery">Emptys's Gallery</a> |
       </nav>
       <hr className='divider'/>
     </header>

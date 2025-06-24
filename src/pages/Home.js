@@ -1,5 +1,6 @@
 import React from 'react';
 import Demetrius from '../images/xbox-demetrious-johnson.gif';
+import Thom from '../images/thom-yorke-normal.gif'; // Importando a imagem Thom, se necessário
 
 function Home() {
     return (
@@ -36,7 +37,7 @@ function Home() {
                 </ul>
             </div>
             <br />
-            <img src={Demetrius} alt="Header Gif" style={{ width: '400px', height: 'auto' }} />
+            <img src={Thom} alt="Header Gif" style={{ width: '400px', height: 'auto' }} />
             <br/>
             <div id='find-me' className='post-it'>
                 <h2>places to find me:</h2>

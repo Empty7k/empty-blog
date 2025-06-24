@@ -32,6 +32,7 @@ function Music() {
         <li>Deftones</li>
         <li>Facção Central</li>
         <li>Duzz</li>
+        <li>Link do Zap</li>
       </ul>
 
       <h2>Favorite Albums</h2>
