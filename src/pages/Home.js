@@ -1,10 +1,9 @@
 import React from 'react';
-import Demetrius from '../images/xbox-demetrious-johnson.gif';
 import Thom from '../images/thom-yorke-normal.gif'; // Importando a imagem Thom, se necessário
 
 function Home() {
     return (
-        <div id='home' className='page-content' >
+        <div id='home' className='page-content glass-panel' >
 
             <div className='neon-text'>
                 <h2>Hi, I'm Empty, welcome</h2>

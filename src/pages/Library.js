@@ -2,7 +2,7 @@ import React from 'react';
 
 function Library() {
     return (
-        <div id='library' className='page-content'>
+        <div id='library' className='page-content glass-panel'>
 
             <p>Like the name says, it's a empty library, there is nothing here...</p>
 

@@ -17,7 +17,7 @@ function Favorites() {
         document.title = "Empty's Brain | Favorites";
     }, []);
     return (
-        <div id='favorites' className='page-content'>
+        <div id='favorites' className='page-content glass-panel'>
             <img src={HeaderGif} alt="Header Gif" style={{ width: '400px', height: 'auto' }} />
             <p>some of my favorite things, without order and maybe missing something because my memory is not the best</p>
             <br />

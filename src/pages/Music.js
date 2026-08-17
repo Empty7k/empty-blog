@@ -12,7 +12,7 @@ function Music() {
     document.title = "Empty's Brain | Music";
   }, []);
   return (
-    <div id='music' className='page-content'>
+    <div id='music' className='page-content glass-panel'>
 
 
       <h1>Musics</h1>

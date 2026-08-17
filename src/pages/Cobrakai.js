@@ -6,7 +6,7 @@ function Cobrakai() {
         document.title = "Empty's Brain | Cobra Kai";
       }, []);
     return (
-        <div id='cobrakai' className='page-content'>
+        <div id='cobrakai' className='page-content glass-panel'>
             <h1>Cobra Kai</h1>
             <p>comecei a assistir cobra kai por achar que seria uma série divertida mas meio idiota, porque
             não queria ver algo muito bom ou pesado, pois tinha acabado de assistir Better Call Saul, e acabou sendo uma das coisas mais incríveis que já assisti</p>

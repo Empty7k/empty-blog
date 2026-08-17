@@ -2,7 +2,7 @@ import React from 'react';
 
 function Pessoa() {
   return (
-    <div id='bora' className='page-content'>
+    <div id='bora' className='page-content glass-panel'>
       <h1>Fernando Pessoa</h1>
       <p>Tive que criar uma página para esse homem.</p>
       <p>Coloquei algumas das minhas poesias favoritas</p>
