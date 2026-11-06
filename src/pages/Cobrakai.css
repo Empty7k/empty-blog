@@ -1,0 +1,20 @@
+.shrine-archive { padding: 8px 0; }
+.shrine-intro { padding: 8px; border: 2px inset #52436b; background: #0b0910; }
+.shrine-intro h1 { margin: 3px 0 6px; font: normal 30px/1.1 'Times New Roman', serif; }
+.shrine-intro p { margin: 4px 0; }
+.shrine-path, .shrine-disclaimer, .shrine-record { color: #9b8cb5; font-size: 11px; font-weight: bold; }
+.shrine-navigation { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; padding: 5px; border: 1px solid #3e3252; background: #161220; }
+.shrine-navigation a { padding: 3px 4px; font-size: 11px; }
+.shrine-window { padding: 2px; border: 2px solid; border-color: #6e5d8a #050408 #050408 #6e5d8a; background: #2d243b; }
+.shrine-titlebar { display: flex; justify-content: space-between; align-items: center; gap: 6px; min-height: 22px; padding: 2px 5px; background: #3e3252; color: #e6e1f0; font-size: 11px; font-weight: bold; }
+.shrine-titlebar span:last-child { flex-shrink: 0; }
+.shrine-content { min-width: 0; padding: 10px; border: 2px inset #52436b; background: #0d0a12; color: #e6e1f0; overflow-wrap: anywhere; }
+.shrine-content p { margin: 8px 0; line-height: 1.65; }
+.shrine-content h2 { margin: 16px 0 8px; padding: 4px 6px; border-bottom: 1px dotted #83739e; color: #e6e1f0; font: normal 22px 'Times New Roman', serif; }
+.shrine-content h3 { margin: 12px 0 6px; color: #d8d0e5; font-size: 13px; }
+.shrine-content .shrine-record { margin-top: 12px; padding: 4px 0; border-bottom: 1px dashed #52436b; }
+.shrine-content .shrine-quote { padding: 8px; border: 2px inset #52436b; border-left: 4px solid #83739e; background: #161220; }
+.shrine-attachment { width: fit-content; max-width: 100%; margin: 8px 0; padding: 4px; border: 2px solid; border-color: #6e5d8a #050408 #050408 #6e5d8a; background: #2d243b; }
+.shrine-attachment img { display: block; width: 700px; max-width: 100%; height: auto; border: 2px inset #52436b; }
+.shrine-attachment figcaption { padding: 4px 2px 1px; color: #d8d0e5; font: 10px/1.4 'Courier New', monospace; overflow-wrap: anywhere; }
+@media (max-width: 500px) { .shrine-content { padding: 6px; }.shrine-navigation { gap: 2px; } }
