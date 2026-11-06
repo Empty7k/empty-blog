@@ -1,8 +1,17 @@
 import React from 'react';
+import './Library.css';
 
 function Pessoa() {
   return (
-    <div id='bora' className='page-content glass-panel'>
+    <div id='bora' className='text-reader'>
+      <div className="text-titlebar"><span>FERNANDO_PESSOA.TXT / DOCUMENT VIEWER</span><span aria-hidden="true">[−] [□] [×]</span></div>
+      <div className="text-reader-meta" aria-label="Document information">
+        <span>FILE: FERNANDO_PESSOA.TXT</span>
+        <span>AUTHOR: FERNANDO PESSOA / HETERÔNIMOS</span>
+        <span>FORMAT: POETRY</span>
+        <span>STATUS: READABLE</span>
+      </div>
+      <div className="text-reader-content">
       <h1>Fernando Pessoa</h1>
       <p>Tive que criar uma página para esse homem.</p>
       <p>Coloquei algumas das minhas poesias favoritas</p>
@@ -318,6 +327,7 @@ function Pessoa() {
         </div>
       </div>
 
+      </div>
     </div>
   );
 }

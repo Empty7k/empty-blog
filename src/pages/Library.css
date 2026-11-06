@@ -1,0 +1,28 @@
+.text-archive, .text-reader { margin: 8px 0; }
+.text-archive-intro { padding: 8px; border: 2px inset #52436b; background: #0b0910; }
+.text-archive-intro h1 { margin: 3px 0 6px; font: normal 30px/1.1 'Times New Roman', serif; }
+.text-archive-intro p { margin: 5px 0; line-height: 1.5; }
+.text-archive-intro .text-archive-path, .text-meta { color: #9b8cb5; font-size: 11px; font-weight: bold; }
+.text-window, .text-reader { min-width: 0; padding: 2px; border: 2px solid; border-color: #6e5d8a #050408 #050408 #6e5d8a; background: #2d243b; }
+.text-window { margin-top: 8px; }
+.text-titlebar { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 22px; padding: 2px 5px; background: #3e3252; color: #e6e1f0; font-size: 11px; font-weight: bold; }
+.text-titlebar h2 { margin: 0; color: inherit; font: inherit; }
+.text-titlebar > span:last-child { flex-shrink: 0; }
+.text-window-body { padding: 6px; border: 2px inset #52436b; background: #110e18; }
+.text-meta { margin: 5px 0; }
+.text-table-wrap { max-width: 100%; overflow-x: auto; border: 2px inset #52436b; background: #0d0a12; }
+.text-file-table { width: 100%; min-width: 490px; border-collapse: collapse; text-align: left; font-size: 12px; }
+.text-file-table th, .text-file-table td { padding: 5px 6px; border-bottom: 1px dashed #2d243b; vertical-align: top; }
+.text-file-table th { background: #161220; color: #9b8cb5; font-size: 10px; }
+.text-file-table tr:last-child td { border-bottom: 0; }
+.text-file-child { padding-left: 22px !important; }
+.text-reader-meta { display: flex; flex-wrap: wrap; gap: 5px 12px; padding: 7px; border: 2px inset #52436b; background: #161220; color: #d8d0e5; font: bold 10px/1.5 'Courier New', monospace; overflow-wrap: anywhere; }
+.text-reader-content { padding: 10px; border: 2px inset #52436b; background: #0d0a12; color: #e6e1f0; }
+.text-reader-content > h1 { margin: 3px 0 8px; font: normal 30px 'Times New Roman', serif; }
+.text-reader-content > p { margin: 5px 0; line-height: 1.5; }
+.text-reader-content .poema-wrapper { padding: 8px 0; }
+.text-reader-content .poema-container { max-width: 100%; padding: 10px; border: 0; border-top: 1px dotted #83739e; background: #0d0a12; color: #e6e1f0; font: 17px/1.7 'Times New Roman', serif; overflow-wrap: anywhere; }
+.text-reader-content .poema-titulo { margin: 0 0 10px; padding: 4px 6px; background: #3e3252; color: #e6e1f0; font-size: 22px; }
+.text-reader-content .poema-container p { margin: 0; padding: 2px 0; }
+.text-reader-content .poema-autor { padding-top: 8px !important; color: #b7a9cc; }
+@media (max-width: 500px) { .text-reader-content { padding: 6px; }.text-reader-content .poema-container { padding: 8px 2px; font-size: 16px; }.text-reader-meta { display: grid; gap: 3px; } }

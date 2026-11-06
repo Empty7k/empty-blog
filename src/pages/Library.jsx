@@ -1,14 +1,39 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Library.css';
 
 function Library() {
     return (
-        <div id='library' className='page-content glass-panel'>
+        <div id='library' className='text-archive'>
+
+            <div className="text-archive-intro">
+                <p className="text-archive-path">TEXT_ARCHIVE / INDEX</p>
+                <h1>The empty library</h1>
 
             <p>Like the name says, it's a empty library, there is nothing here...</p>
 
 
             <p>Just kidding, the page is in progress, here are Fernando Pessoa's Page with my favorite poems for you instead while im finishing.</p>
-            <p><a href='/pessoa'>Fernando Pessoa</a></p>
+            </div>
+            <section className="text-window" aria-labelledby="text-index-title">
+                <div className="text-titlebar"><h2 id="text-index-title">TEXT_ARCHIVE / FILE INDEX</h2><span aria-hidden="true">[−] [□] [×]</span></div>
+                <div className="text-window-body">
+                    <p className="text-meta">DIRECTORIES: 04 / STATUS: IN PROGRESS</p>
+                    <div className="text-table-wrap">
+                        <table className="text-file-table">
+                            <thead><tr><th scope="col">NAME</th><th scope="col">TYPE</th><th scope="col">SIZE</th><th scope="col">DATE</th><th scope="col">STATUS</th></tr></thead>
+                            <tbody>
+                                <tr><td>reading_log/</td><td>DIR</td><td>—</td><td>—</td><td>IN PROGRESS</td></tr>
+                                <tr><td>poetry/</td><td>DIR</td><td>—</td><td>—</td><td>READABLE</td></tr>
+                                <tr><td className="text-file-child"><Link to="/pessoa">Fernando Pessoa</Link></td><td>TXT</td><td>—</td><td>—</td><td><Link to="/pessoa">[ READ ]</Link></td></tr>
+                                <tr><td>unfinished/</td><td>DIR</td><td>—</td><td>—</td><td>IN PROGRESS</td></tr>
+                                <tr><td>favorite_authors/</td><td>DIR</td><td>—</td><td>—</td><td>IN PROGRESS</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p className="text-meta">— = INFORMATION NOT AVAILABLE</p>
+                </div>
+            </section>
 
 {/*             <div className='simple-list'>
                 <h1>2025</h1>
