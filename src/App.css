@@ -1,313 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 :root {
-  /* Frutiger Aero / Web 2.0 Palette */
-  --aero-cyan: #00ffff;
-  --aero-blue: #0088ff;
-  --aero-lime: #a3ff00;
-  --aero-glass: rgba(255, 255, 255, 0.4);
-  --aero-glass-dark: rgba(0, 0, 0, 0.5);
-  
-  --font-main: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-retro: 'Courier New', Courier, monospace;
-  --font-title: 'Press Start 2P', cursive;
+  color: #d8d0e5;
+  background: #07060a;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
 }
 
-/* Global resets & typography */
-body {
-    font-family: var(--font-main);
-    margin: 0;
-    padding: clamp(10px, 2vw, 20px);
-    color: #fff; /* Base color changed for better contrast over backgrounds */
-    text-shadow: 0 1px 2px rgba(0,0,0,0.8); /* readable text */
-}
-
-/* Scrollbar styling for Web 2.0 feel */
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.2); 
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--aero-cyan), var(--aero-blue)); 
-  border-radius: 10px;
-  border: 2px solid rgba(255,255,255,0.3);
-}
-
-header {
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 20px;
-}
-
-footer {
-    padding-top: 50px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-/* Backgrounds */
-.site-background {
-    min-height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.home-bg { background-image: url(./images/milk.jpg); }
-.favorites-bg { background-image: url(./images/w7wpp.jpg); }
-.music-bg { background-image: url(./images/radiocover.jpg); }
-.cobrakai-bg { background-image: url(./images/logo-cobrakai.jpg); }
-.library-bg { background-image: url(./images/daria-kraplak-d34DtRp1bqo-unsplash.jpg); }
-.pessoa-bg { background-image: url(./images/fernando-pessoa.png); }
-
-h1 {
-    font-family: var(--font-title);
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    text-shadow: 2px 2px 0px var(--aero-blue), -1px -1px 0px var(--aero-cyan);
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-/* Links */
-a, Link {
-    color: var(--aero-cyan);
-    text-decoration: none;
-    transition: color 0.2s ease, text-shadow 0.2s ease;
-}
-a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px var(--aero-cyan);
-}
-
-/* Glassmorphism Panel (Replaces simple-list and flat backgrounds) */
-.glass-panel {
-    background: var(--aero-glass-dark);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left: 1px solid rgba(255,255,255,0.4);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37), inset 0 2px 15px rgba(255,255,255,0.1);
-    border-radius: 15px;
-    padding: 20px;
-    margin: 15px 0;
-}
-
-.page-content {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Glossy Gel Buttons (Header Navigation) */
-nav.glossy-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-    width: 100%;
-}
-
-.glossy-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    /* Purple/Violet jelly-like gradient with high gloss at top */
-    background: linear-gradient(180deg, 
-        rgba(224, 176, 255, 0.6) 0%, 
-        rgba(153, 50, 204, 0.9) 48%, 
-        rgba(75, 0, 130, 0.95) 50%, 
-        rgba(50, 0, 90, 1) 100%
-    );
-    color: white !important;
-    font-weight: bold;
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.8);
-    border: 1px solid rgba(25, 0, 50, 0.8);
-    border-top: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    /* Simulate depth: outer shadow + inner highlight edge */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 
-                inset 0 1px 2px rgba(255, 255, 255, 0.8),
-                inset 0 -2px 5px rgba(0, 0, 0, 0.4);
-    transition: transform 0.1s ease, box-shadow 0.2s ease, filter 0.2s ease;
-    cursor: pointer;
-}
-
-.glossy-btn:hover {
-    /* Brighter gloss on hover */
-    filter: brightness(1.15) saturate(1.2);
-    box-shadow: 0 6px 12px rgba(153, 50, 204, 0.6), 
-                inset 0 2px 4px rgba(255, 255, 255, 0.9),
-                inset 0 -2px 5px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-}
-
-.glossy-btn:active {
-    transform: translateY(1px) scale(0.98);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.6), 
-                inset 0 3px 8px rgba(0, 0, 0, 0.7);
-    background: linear-gradient(180deg, 
-        rgba(50, 0, 90, 1) 0%, 
-        rgba(75, 0, 130, 0.95) 50%, 
-        rgba(153, 50, 204, 0.9) 52%, 
-        rgba(224, 176, 255, 0.5) 100%
-    );
-}
-
-/* Post-it */
-.post-it {
-    background: linear-gradient(135deg, #ffff88 0%, #ffeb3b 100%);
-    color: #53062f;
-    font-family: "Comic Sans MS", cursive;
-    padding: 15px 20px;
-    transform: rotate(-3deg);
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.3), inset 0 0 15px rgba(0,0,0,0.1);
-    border-radius: 2px 10px 10px 2px;
-    display: inline-block;
-    margin: 15px;
-    text-shadow: none; /* overriding body */
-}
-.post-it a {
-    color: #0000ee;
-    text-shadow: none;
-    font-weight: bold;
-}
-
-/* Neon Text */
-.neon-text {
-    color: #fff;
-    text-shadow:
-      0 0 5px #fff,
-      0 0 10px #ff00ff,
-      0 0 20px #ff00ff,
-      0 0 40px #00ffff;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 1px solid rgba(255,0,255,0.3);
-    display: inline-block;
-    margin: 10px 0;
-}
-
-/* Marquee / Ticker */
-.ticker-wrap {
-    width: 100%;
-    overflow: hidden;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.5) 80%, rgba(0,0,0,0) 100%);
-    padding: 5px 0;
-    margin: 10px 0;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-.ticker-content {
-    display: inline-block;
-    white-space: nowrap;
-    animation: ticker 15s linear infinite;
-    color: var(--aero-lime);
-    font-family: var(--font-retro);
-    font-weight: bold;
-    text-shadow: 0 0 5px var(--aero-lime);
-}
-@keyframes ticker {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-
-/* Old Simple List - Retained but restyled slightly */
-.simple-list {
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 15px;
-    margin: 10px 0;
-}
-.simple-list ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-.simple-list li {
-    margin-bottom: 5px;
-}
-
-/* Poema Specific (Kept but adapted to glass) */
-.poema-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    padding: 20px 0;
-}
-.poema-container {
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(8px);
-    border-left: 5px solid #00ffff; 
-    border-radius: 0 10px 10px 0;
-    padding: 30px;
-    max-width: 650px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-    font-family: 'Cormorant Garamond', serif;
-    margin-left: 0;
-    line-height: 1.7;
-}
-.poema-titulo {
-    font-size: 1.8rem;
-    color: var(--aero-cyan);
-    margin-bottom: 25px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-    text-shadow: none;
-}
-.poema-texto p {
-    margin: 0;
-    padding: 4px 0;
-    font-size: 1.15rem;
-    color: #fffefe;
-    text-align: left;
-    text-shadow: none;
-}
-.estrofe-divider {
-    height: 1px;
-    background: linear-gradient(to right, var(--aero-cyan), transparent);
-    margin: 18px 0;
-    width: 50%;
-}
-.poema-autor {
-    font-style: italic;
-    margin-top: 40px;
-    color: var(--aero-cyan);
-    text-align: right;
-    font-size: 1rem;
-    text-shadow: none;
-}
-
-/* Badges */
-.retro-badges {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-.retro-badge {
-    border: 1px solid #fff;
-    padding: 2px 5px;
-    font-size: 10px;
-    font-family: 'Press Start 2P', cursive;
-    background: linear-gradient(180deg, #ff9900, #cc3300);
-    color: #fff;
-    box-shadow: 1px 1px 0px #000;
-    text-shadow: 1px 1px 0px #000;
-}
+*, *::before, *::after { box-sizing: border-box; border-radius: 0; }
+body { margin: 0; min-width: 0; color: #d8d0e5; background: #07060a; }
+body.site-background:not(.home-bg) { padding: 0; background: #07060a; }
+body.site-background:not(.home-bg)::before { content: ''; position: fixed; inset: 0; z-index: -1; background-position: center; background-size: cover; opacity: .1; pointer-events: none; }
+body.favorites-bg::before { background-image: url('./images/w7wpp.jpg'); }
+body.music-bg::before { background-image: url('./images/radiocover.jpg'); }
+body.cobrakai-bg::before { background-image: url('./images/logo-cobrakai.jpg'); }
+body.library-bg::before { background-image: url('./images/daria-kraplak-d34DtRp1bqo-unsplash.jpg'); }
+body.pessoa-bg::before { background-image: url('./images/fernando-pessoa.png'); }
+::selection { background: #b69cf6; color: #07060a; }
+::-webkit-scrollbar { width: 16px; height: 16px; }
+::-webkit-scrollbar-track { background: #161220; }
+::-webkit-scrollbar-thumb { background: #52436b; border: 2px outset #83739e; }
+::-webkit-scrollbar-corner { background: #161220; }
+a { color: #c7b6ed; text-decoration: underline; transition: none; }
+a:hover, a:focus-visible { color: #07060a; background: #b69cf6; text-shadow: none; }
+a:focus-visible { outline: 1px dotted #e6e1f0; outline-offset: 2px; }
+h1, h2, h3 { color: #e6e1f0; }
+h1 { font-family: 'Times New Roman', serif; font-size: clamp(26px, 4vw, 38px); font-weight: normal; }
+header:not(.wired-header), footer:not(.wired-footer) { max-width: 920px; margin: 0 auto 8px; padding: 8px; text-align: center; background: #110e18; border: 2px solid; border-color: #6e5d8a #050408 #050408 #6e5d8a; }
+header:not(.wired-header) img { display: block; max-width: 100%; height: auto; margin: 0 auto 6px; }
+header:not(.wired-header) h1 { margin: 6px 0; }
+.ticker-wrap { overflow: hidden; padding: 4px 6px; border: 2px inset #52436b; background: #07060a; color: #9b8cb5; font-size: 11px; }
+.ticker-content { white-space: normal; }
+nav.glossy-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-top: 6px; }
+.glossy-btn { display: inline-block; padding: 5px 8px; border: 2px solid; border-color: #6e5d8a #050408 #050408 #6e5d8a; background: #3e3252; color: #e6e1f0; font-size: 12px; font-weight: bold; text-decoration: none; }
+.glossy-btn:hover, .glossy-btn:focus-visible { background: #b69cf6; color: #07060a; }
+.glossy-btn:active { border-color: #050408 #6e5d8a #6e5d8a #050408; }
+.page-content, footer:not(.wired-footer) { max-width: 920px; }
+.page-content { margin: 0 auto; min-width: 0; overflow-wrap: anywhere; }
+.glass-panel, .simple-list, .post-it, .neon-text { padding: 10px; background: #110e18; border: 2px solid; border-color: #6e5d8a #050408 #050408 #6e5d8a; }
+.page-content > h1:first-child { margin: -4px -4px 12px; padding: 4px 7px; background: #3e3252; font-size: 26px; }
+.page-content img { max-width: 100%; height: auto !important; }
+.page-content p, .page-content li { line-height: 1.6; }
+.page-content ul { padding-left: 24px; }
+.page-content li { margin: 2px 0; }
+.simple-list, .post-it, .neon-text { margin: 8px 0; }
+footer:not(.wired-footer) { margin-top: 8px; }
+footer .glass-panel { padding: 6px !important; }
+.retro-badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px; }
+.retro-badge { padding: 3px 6px; border: 2px outset #6e5d8a; color: #d8d0e5; background: #2d243b; font-size: 10px; }
+.poema-wrapper { padding: 6px 0; }
+.poema-container { max-width: 700px; padding: 10px; border: 2px inset #52436b; background: #07060a; font-family: 'Times New Roman', serif; font-size: 17px; line-height: 1.6; }
+.poema-titulo { margin: 0 0 10px; padding: 4px 6px; background: #3e3252; color: #e6e1f0; font-size: 22px; }
+.poema-texto p { margin: 0; padding: 2px 0; }
+.poema-autor { color: #9b8cb5; font-style: italic; }
+.estrofe-divider { width: 55%; margin: 12px 0; border-top: 1px dotted #83739e; }
