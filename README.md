@@ -1,103 +1,120 @@
-# Empty's Brain
-> A personal digital archive and blog infused with nostalgic Web 2.0 aesthetics.
-
-![React](https://img.shields.io/badge/React-19.1.0-61DAFB?logo=react&logoColor=black&style=flat-square)
-![NodeJS](https://img.shields.io/badge/Node.js-Runtime-339933?logo=nodedotjs&logoColor=white&style=flat-square)
-![HTML5](https://img.shields.io/badge/HTML5-Semantic-E34F26?logo=html5&logoColor=white&style=flat-square)
-![CSS3](https://img.shields.io/badge/CSS3-Vanilla-1572B6?logo=css3&logoColor=white&style=flat-square)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black&style=flat-square)
-
----
-
-## 🌌 Project Vision & Concept
-
-**Empty's Brain** is a personal digital space deeply inspired by early 2000s/2010s web culture, Web 2.0, Frutiger Aero, and the charming chaos of classic Neocities pages. 
-
-Moving away from the hyper-minimalist, sanitized corporate web templates of today, this project prioritizes personality, custom aesthetic expression, and retro-futuristic charm. It serves as a creative portfolio, a media showcase, and a personal journal—all wrapped in glossy gel buttons, tactile interfaces, and nostalgic layouts that make browsing feel like an exploration.
-
----
-
-## ✨ Key Features & UI Highlights
-
-- **Authentic Era-Aesthetics:** Combines Frutiger Aero glassmorphism with Web 2.0 gradients and drop shadows.
-- **Glossy Navigation:** Custom-built, tactile "jelly" purple navigation buttons featuring complex linear gradients, inner highlights, and interactive active/pressed states.
-- **Dynamic Marquee Tickers:** Hardware-accelerated CSS marquee banners providing a nostalgic but performant site status feed.
-- **Glassmorphic Panels:** Content is wrapped in frosted glass (`backdrop-filter`) containers to ensure text remains highly legible against customized, dynamic background images.
-- **Categorized Showcases:** Dedicated sections for personal favorites, music playlists, poetry (Fernando Pessoa), media reviews (Cobra Kai), and image galleries.
-- **Fluid & Responsive:** Modern implementation using CSS Flexbox, Grid, and `clamp()` typography to maintain visual integrity across all devices.
-
----
-
-## 🚀 Getting Started & Local Setup
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
-
-### Installation
-
-1. **Clone the repository** (if applicable):
-   ```bash
-   git clone https://github.com/yourusername/empty-blog.git
-   cd empty-blog
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Run the local development server**:
-   ```bash
-   npm start
-   ```
-
-4. **Open in Browser**:
-   Open [http://localhost:5173](http://localhost:5173) to view it in the browser. The page will reload when you make changes.
-
-### Building for Production
-To create an optimized production build:
-```bash
-npm run build
+```text
+================================================================
+                       empty's brain_
+                    SYSTEM_MANIFEST // 001
+================================================================
+FILE     : README.TXT
+SYSTEM   : empty's brain_
+PROTOCOL : THE WIRED / NAVI
+STATUS   : ALWAYS UNDER CONSTRUCTION
+PALETTE  : CYBERIA_PURPLE
+================================================================
 ```
-
----
-
-## 📂 Project Structure
 
 ```text
-empty-blog/
-├── public/                     # Publicly accessible static assets
-│   ├── images/                 # Custom UI imagery and retro GIFs
-│   ├── favicon.ico             # App icon
-│   └── manifest.json            # Web app metadata
-├── src/                        # Application Source Code
-│   ├── components/             # Reusable UI components
-│   │   ├── Header.jsx          # Navbar, logo, and marquee ticker
-│   │   └── Footer.jsx          # Web 2.0 validation badges
-│   ├── images/                 # Bundled visual assets
-│   ├── pages/                  # Route-level views (Home, Music, Gallery, etc.)
-│   ├── App.css                 # Global styles, variables, and Frutiger Aero CSS
-│   ├── App.jsx                 # Main layout wrapper and routing configuration
-│   └── index.jsx               # React DOM render entry point
-├── index.html                  # Vite HTML entry point
-├── vite.config.mjs             # Vite configuration
-├── package.json                # Project metadata and npm scripts
-└── README.md                   # This documentation file
+01 // OVERVIEW                                      ABOUT_SYSTEM.TXT
+----------------------------------------------------------------
 ```
 
----
+Um espaço pessoal na web para guardar interesses, leituras, músicas e
+pequenas transmissões. Uma página própria para explorar com calma,
+fora do ritmo das redes sociais.
 
-## 🛠 Tech Stack & Architecture
+O sistema reúne referências da Old Web, Cybercore, Neocities, Windows
+97/98 e da atmosfera de *Serial Experiments Lain*. Janelas chanfradas,
+preto profundo e lavanda fazem parte da linguagem visual da Wired.
 
-### Frontend Layer
-- **Framework:** React 19 (Single Page Application via Vite)
-- **Routing:** React Router v7 (`react-router-dom`)
-- **Styling:** Vanilla CSS3 (Custom Properties, Flexbox, Keyframes, Backdrop Filters)
-- **Typography:** Google Fonts (Inter, Press Start 2P, Cormorant Garamond)
+Todas as rotas compartilham o mesmo shell: cabeçalho, barra de status,
+diretório lateral, caminho do arquivo aberto e rodapé técnico.
 
-### Build Tools & Runtime
-- **Runtime:** Node.js
-- **Build tool:** Vite
-- **Bundler:** Rolldown (used by Vite)
+```text
+02 // DIRECTORY_MAP                                 FILE_SYSTEM_TREE
+----------------------------------------------------------------
+
+EMPTY'S BRAIN_ (ROOT)
+|
+|-- /            INDEX.HTM
+|                Home: about, transmissions e signal monitor
+|
+|-- /favorites   PERSONAL_DATABASE
+|                Anime, games, series, youtube e manga
+|
+|-- /music       AUDIO_ARCHIVE.LOG
+|                Artistas, álbuns, player visual e link externo
+|
+|-- /library     TEXT_ARCHIVE
+|   |            Índice de leituras e autores; em construção
+|   |
+|   `-- /pessoa  FERNANDO_PESSOA.TXT
+|                Leitor de poesia e textos de Fernando Pessoa
+|
+|-- /gallery     VISUAL_FILES
+|                Contact sheet e inspetor de arquivos
+|                Diretório vazio, preparado para imagens futuras
+|
+`-- /cobrakai    MEDIA_SHRINE / COBRA_KAI
+                 Dossiê pessoal: navegação, notas, citações
+                 e imagens anexadas
+```
+
+`/pessoa` é uma rota própria, acessada pela biblioteca. O player da
+página de música é visual: o link para o Spotify abre um serviço externo.
+
+```text
+03 // SYSTEM_COMPONENTS                              HARDWARE_LOG.TXT
+----------------------------------------------------------------
+
+RUNTIME    : Node.js + npm
+INTERFACE  : React / React DOM
+ROUTING    : React Router
+STYLES     : CSS
+BUILD      : Vite
+OUTPUT     : dist/
+```
+
+```text
+04 // LOCAL_CONNECTION                                  BOOT_SEQ.TXT
+----------------------------------------------------------------
+```
+
+É necessário ter Node.js e npm instalados. A versão atual do Vite
+requer Node.js 20.19+ na série 20 ou 22.12+.
+
+```sh
+git clone https://github.com/Empty7k/empty-blog.git
+cd empty-blog
+npm install
+npm run dev
+```
+
+Abra o endereço informado pelo Vite no terminal. Para gerar e conferir
+a versão de produção localmente:
+
+```sh
+npm run build
+npm run preview
+```
+
+```text
+05 // SOURCE_DIRECTORY                                FILE_INDEX.TXT
+----------------------------------------------------------------
+
+empty-blog/
+|-- public/                 Arquivos estáticos
+|-- src/
+|   |-- components/        Shell e componentes compartilhados
+|   |-- images/            Imagens e GIFs importados pelo código
+|   |-- pages/             Páginas e estilos de cada módulo
+|   |-- App.jsx            Rotas e shell da aplicação
+|   |-- App.css            Estilos compartilhados
+|   `-- index.jsx          Entrada do React
+|-- index.html             Entrada HTML do Vite
+|-- vite.config.mjs        Configuração do Vite
+|-- vercel.json            Build e diretório de saída na Vercel
+|-- package.json           Dependências e comandos
+`-- README.md              Este manifesto
+
+================================================================
+END OF TRANSMISSION_                          [ CONNECTION CLOSED ]
+================================================================
+```

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import WiredShell from './components/WiredShell';
 import Home from './pages/Home';
 import Favorites from './pages/Favorites';
 import Music from './pages/Music';
@@ -25,11 +24,10 @@ function BackgroundWrapper({ children }) {
   return <>{children}</>;
 }
 
-function App() {
+function SiteLayout() {
   return (
-    <Router>
       <BackgroundWrapper>
-        <Header />
+        <WiredShell>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/favorites" element={<Favorites />} />
@@ -39,8 +37,15 @@ function App() {
           <Route path="/pessoa" element={<Pessoa />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
-        <Footer />
+        </WiredShell>
       </BackgroundWrapper>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <SiteLayout />
     </Router>
   );
 }
