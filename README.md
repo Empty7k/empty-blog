@@ -54,7 +54,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
    ```
 
 4. **Open in Browser**:
-   Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload when you make changes.
+   Open [http://localhost:5173](http://localhost:5173) to view it in the browser. The page will reload when you make changes.
 
 ### Building for Production
 To create an optimized production build:
@@ -71,16 +71,18 @@ empty-blog/
 ├── public/                     # Publicly accessible static assets
 │   ├── images/                 # Custom UI imagery and retro GIFs
 │   ├── favicon.ico             # App icon
-│   └── index.html              # Main HTML template entry point
+│   └── manifest.json            # Web app metadata
 ├── src/                        # Application Source Code
 │   ├── components/             # Reusable UI components
-│   │   ├── Header.js           # Navbar, logo, and marquee ticker
-│   │   └── Footer.js           # Web 2.0 validation badges
+│   │   ├── Header.jsx          # Navbar, logo, and marquee ticker
+│   │   └── Footer.jsx          # Web 2.0 validation badges
 │   ├── images/                 # Bundled visual assets
 │   ├── pages/                  # Route-level views (Home, Music, Gallery, etc.)
 │   ├── App.css                 # Global styles, variables, and Frutiger Aero CSS
-│   ├── App.js                  # Main layout wrapper and routing configuration
-│   └── index.js                # React DOM render entry point
+│   ├── App.jsx                 # Main layout wrapper and routing configuration
+│   └── index.jsx               # React DOM render entry point
+├── index.html                  # Vite HTML entry point
+├── vite.config.mjs             # Vite configuration
 ├── package.json                # Project metadata and npm scripts
 └── README.md                   # This documentation file
 ```
@@ -90,13 +92,12 @@ empty-blog/
 ## 🛠 Tech Stack & Architecture
 
 ### Frontend Layer
-- **Framework:** React 19 (Single Page Application via Create React App)
+- **Framework:** React 19 (Single Page Application via Vite)
 - **Routing:** React Router v7 (`react-router-dom`)
 - **Styling:** Vanilla CSS3 (Custom Properties, Flexbox, Keyframes, Backdrop Filters)
 - **Typography:** Google Fonts (Inter, Press Start 2P, Cormorant Garamond)
 
 ### Build Tools & Runtime
 - **Runtime:** Node.js
-- **Testing:** React Testing Library (`@testing-library/react`, `jest-dom`)
-- **Linting:** ESLint (`eslint-config-react-app`)
-- **Bundler:** Webpack (under the hood via `react-scripts`)
+- **Build tool:** Vite
+- **Bundler:** Rolldown (used by Vite)

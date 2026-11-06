@@ -4,20 +4,67 @@
 /node_modules
 /.pnp
 .pnp.js
+/.npm
+/.yarn
+/.pnpm-store
+
+# local tool and cloud configuration
+/.aws
+/.agents
+/.codex
+/.cursor
+/.claude
+/.windsurf
+/.vercel
+/.netlify
+/.firebase
+/.wrangler
 
 # testing
 /coverage
+/.nyc_output
+/.vitest
+/.playwright
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.idea/
+.vscode/
+.cache/
+.eslintcache
+.vite/
+.vite-temp/
+.turbo/
+.env
+.env.*
+!.env.example
+*.local
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# local runtime output
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.pid
+
+# private credentials and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# operating system metadata
+Thumbs.db
+ehthumbs.db
