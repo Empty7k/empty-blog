@@ -35,7 +35,7 @@ function Home() {
             <div className="wired-columns">
               <section className="wired-window wired-about">
                 <div className="wired-window-bar"><span>▣ &nbsp; ABOUT_ME.TXT</span><span className="wired-window-controls" aria-hidden="true"><span>_</span><span>□</span><span>×</span></span></div>
-                <div className="wired-window-content"><p className="wired-small-label">A FEW THINGS THAT MAKE ME HAPPY</p><h2>things i like<span> :</span></h2><p className="wired-interests">philosophy <i>✳</i> UFC <i>✳</i> edits <i>✳</i> My Girlfriend <i>✳</i> PS Vita <i>✳</i> Kindle <i>✳</i> music <i>✳</i> Brazilian Jiu-Jitsu <i>✳</i> Lain <i>✳</i> Counter-Strike <i>✳</i> anime</p><Link to="/favorites" className="wired-text-link">explore the favorites archive <span>↗</span></Link></div>
+                <div className="wired-window-content"><p className="wired-small-label">A FEW THINGS THAT MAKE ME HAPPY</p><h2>things i love<span> :</span></h2><p className="wired-interests">My girlfriend(Karine) <i>✳</i> UFC <i>✳</i> Thinkpad <i>✳</i> philosophy <i>✳</i> Nintendo Switch <i>✳</i> Kindle <i>✳</i> music <i>✳</i> Brazilian Jiu-Jitsu <i>✳</i> Lain <i>✳</i> Counter-Strike <i>✳</i> anime</p><Link to="/favorites" className="wired-text-link">explore the favorites archive <span>↗</span></Link></div>
               </section>
               <section className="wired-window wired-log">
                 <div className="wired-window-bar"><span>▣ &nbsp; LITTLE_TRANSMISSIONS.LOG</span><span className="wired-window-controls" aria-hidden="true"><span>_</span><span>□</span><span>×</span></span></div>
